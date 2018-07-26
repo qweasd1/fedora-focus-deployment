@@ -12,7 +12,7 @@ services:
     expose:
       - "8080"
     ports:
-      - "8080:8080"
+      - "443:8080"
     command: "npm run start"
     links:
       - db
@@ -23,7 +23,7 @@ services:
     environment:
       POSTGRES_PASSWORD: 12345
       POSTGRES_USER: postgres
-      POSTGRES_DB: HealthyU
+      POSTGRES_DB: focus
     volumes:
       - database_volume:/var/lib/postgresql/data
 volumes:
