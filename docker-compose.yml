@@ -23,7 +23,7 @@ services:
     environment:
       POSTGRES_PASSWORD: 12345
       POSTGRES_USER: postgres
-      POSTGRES_DB: focus
+      POSTGRES_DB: HealthyU
     volumes:
       - database_volume:/var/lib/postgresql/data
 volumes:

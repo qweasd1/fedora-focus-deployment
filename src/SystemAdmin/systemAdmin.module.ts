@@ -5,7 +5,9 @@ import {SystemAdminController} from "./systemAdmin.controller";
 import {SystemAdminService} from "./systemAdmin.service";
 
 @Module({
-    imports:[DatabaseModule],
+    imports:[
+        DatabaseModule
+    ],
     components:[
         systemAdminProvider,
         SystemAdminService
